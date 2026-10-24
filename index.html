@@ -36,13 +36,61 @@
     <!-- Product detail: filled by script.js when a card is clicked -->
     <section id="product-detail" hidden></section>
 
+     <!-- How to order -->
     <section id="commande">
       <h2>Comment commander</h2>
       <ol>
         <li>Choisissez un gâteau dans le catalogue.</li>
         <li>Cliquez sur Commander : le formulaire s'ouvre avec votre gâteau sélectionné.</li>
-        <li>Décrivez vos ajouts et personnalisations, joignez une photo de référence si vous en avez une, puis envoyez le formulaire.</li>
+        <li>Décrivez vos ajouts et personnalisations, joignez une photo de référence si vous en avez une, puis envoyez le <a href="#" id="show-form-link">formulaire</a>.</li>
       </ol>
+
+      <!-- Order form card: hidden until the customer clicks the "formulaire" link -->
+      <div id="order-form-card" hidden>
+        <form id="order-form">
+          <p>
+            <label for="customer-name">Votre nom</label><br>
+            <input type="text" id="customer-name" name="customerName" required>
+          </p>
+          <p>
+            <label for="customer-email">Votre courriel</label><br>
+            <input type="email" id="customer-email" name="customerEmail" required>
+          </p>
+          <p>
+            <label for="customer-phone">Votre téléphone</label><br>
+            <input type="tel" id="customer-phone" name="customerPhone" required>
+          </p>
+          <p>
+            <label for="cake-name">Gâteau choisi</label><br>
+            <input type="text" id="cake-name" name="cakeName" required>
+          </p>
+          <p>
+            <label for="event-date">Date souhaitée</label><br>
+            <input type="date" id="event-date" name="eventDate" required>
+          </p>
+          <p>
+            <label for="servings">Nombre de portions</label><br>
+            <input type="number" id="servings" name="servings" min="1">
+          </p>
+          <p>
+            <label for="cake-text">Texte à écrire sur le gâteau</label><br>
+            <input type="text" id="cake-text" name="cakeText">
+          </p>
+          <p>
+            <label for="details">Ajouts et personnalisations souhaités</label><br>
+            <textarea id="details" name="details" rows="4"></textarea>
+          </p>
+          <p>
+            <label for="allergies">Allergies à signaler</label><br>
+            <input type="text" id="allergies" name="allergies">
+          </p>
+          <p>
+            <label for="reference-image">Image de référence (optionnel)</label><br>
+            <input type="file" id="reference-image" name="referenceImage" accept="image/*">
+          </p>
+          <button type="submit">Envoyer ma demande</button>
+        </form>
+      </div>
     </section>
 
     <section id="a-propos">
