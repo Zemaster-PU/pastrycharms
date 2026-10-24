@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Gâteau au chocolat",
+        "category": "gateaux",
+        "mainPhoto": "images/chocolate_cake_1.jpg",
+        "photos": ["images/chocolate_cake_1.jpg", "images/chocolate_cake_2.jpg", "images/chocolate_cake_3.jpg"],
+        "description": "Un délicieux gâteau au chocolat fondant, parfait pour les amateurs de chocolat.",
+        "flavor": ["chocolat"],
+        "startingPrice": 80,
+        "sizes": ["petit", "moyen", "grand"],
+        "ingredients": ["farine", "sucre", "beurre", "œufs", "chocolat"],
+        "allergens": ["gluten", "lactose", "œufs"],
+        "minLeadHours": 48
+    }
+]
